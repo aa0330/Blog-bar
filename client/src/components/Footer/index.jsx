@@ -2,9 +2,10 @@ import React from "react";
 
 const Index = () => {
   return (
-    <>
-      <div>Home!!</div>
-    </>
+    <footer>
+      <img src="" alt="" />
+      <span> crazy </span>
+    </footer>
   );
 };
 export default Index;
