@@ -1,12 +1,16 @@
-$lightGreen: #b9e7e7;
-
 .navbar {
   .container {
-    padding: 10px 0px;
+    height: 4rem;
+    padding: 5px 0px;
     display: flex;
+
     justify-content: space-between;
+    align-items: center;
     .logo {
       width: 120px;
+      img {
+        width: 100%;
+      }
     }
     .links {
       display: flex;
@@ -23,7 +27,7 @@ $lightGreen: #b9e7e7;
         width: 50px;
         height: 50px;
         border-radius: 50%;
-        background-color: $lightGreen;
+        background-color: #b4292c;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -31,9 +35,9 @@ $lightGreen: #b9e7e7;
         border: 1px solid white;
 
         &:hover {
-          color: teal;
+          color: #b4292c;
           background-color: #fff;
-          border: 1px solid teal;
+          border: 1px solid #b4292c;
         }
       }
     }

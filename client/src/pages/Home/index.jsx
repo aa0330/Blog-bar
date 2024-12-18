@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './index.scss'
+import "./index.scss";
 
 const Index = () => {
   const possts = [
@@ -50,7 +50,7 @@ const Index = () => {
               <img src={post.src} alt="" />
             </div>
             <div className="content">
-              <Link className="link"></Link>
+              <Link className="link">{post.title}</Link>
             </div>
           </div>
         ))}
