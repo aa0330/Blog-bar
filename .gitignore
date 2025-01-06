@@ -2,7 +2,10 @@
 
 /api/node_modules
 /api/DS_Store
+/api/db.config.yaml
+
 
 /client/node_modules
 /client/.env
 /client/.DS_Store
+/client/package-lock.json
