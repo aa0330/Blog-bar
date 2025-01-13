@@ -5,11 +5,11 @@ import jsyaml from 'js-yaml'
 import fs from 'node:fs'
 
 const yaml = fs.readFileSync('./db.config.yaml', 'utf8')
-const config = jsyaml.load(yaml)
+const databaseConfig = jsyaml.load(yaml)
 
-const sql = await mysql2.createConnection({
-  ...config.db
-})
+const sql = await mysql2.createConnection({...databaseConfig.db})
+
+console.log(111, sql);
 
 
 const app = express();
