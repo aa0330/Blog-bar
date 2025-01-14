@@ -2,7 +2,7 @@
 
 /api/node_modules
 /api/DS_Store
-/api/db.config.yaml
+/api/app
 
 
 /client/node_modules
