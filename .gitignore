@@ -1,7 +1,8 @@
-/DS_Store
+.DS_Store
+/.DS_Store
 
 /api/node_modules
-/api/DS_Store
+/api/.DS_Store
 /api/app
 
 
