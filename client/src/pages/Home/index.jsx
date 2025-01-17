@@ -1,4 +1,5 @@
 import React from "react";
+import { Upload } from "antd";
 import { Link } from "react-router-dom";
 import "./index.scss";
 
@@ -43,6 +44,15 @@ const Index = () => {
   ];
   return (
     <div className="home">
+      <Upload
+        name="file"
+        listType="picture-card"
+        className="avatar-uploader"
+        showUploadList={false}
+        action="http://127.0.0.1:1234/api/upload"
+      >
+        上传
+      </Upload>
       <div className="posts">
         {possts.map((post) => (
           <div className="post" key={post.id}>
