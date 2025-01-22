@@ -40,7 +40,7 @@ const handleRequestHeader = (config) => {
 };
 
 const handleAuth = (config) => {
-//   config.header["token"] = localStorage.getItem("token") || token || "";
+  //   config.header["token"] = localStorage.getItem("token") || token || "";
   return config;
 };
 
@@ -144,12 +144,11 @@ axios.interceptors.response.use(
   }
 );
 
+const defaultConfig = {
+  timeout: 10000,
+  
+};
 
 class Http {
-  
-
-
-
+  constructor(porps) {}
 }
-
-

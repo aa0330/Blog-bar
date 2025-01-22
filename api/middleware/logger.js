@@ -1,4 +1,4 @@
 export function Logger(req, res, next) {
-  console.log("111Logger");
+  console.log(req.method, req.path);
   next();
 }
