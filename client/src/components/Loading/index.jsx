@@ -1,6 +1,6 @@
 import React from "react";
 import { Spin, Modal } from "antd";
-import styles from "./index.scss";
+import styles from "./";
 
 let loadableConfimShowFlag = false;
 const confirm = Modal.success;

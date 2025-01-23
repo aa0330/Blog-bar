@@ -1,0 +1,1 @@
+export { buildRoutes } from "./buildRoutes";

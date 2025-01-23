@@ -1,48 +1,18 @@
-import React, { Suspense, lazy } from "react";
-import { createBrowserRouter } from "react-router-dom";
-// import Home from "../pages/Home";
-// import Login from "../pages/Login";
-// import Register from "../pages/Register";
-// import Write from "../pages/Write";
-// import Layout from "../components/Layout";
-import Loadable from "../utils/loadable";
+import { Children, lazy } from "react";
+import { buildRoutes } from "@/utils";
 
-const router = createBrowserRouter([
-  // {
-  //   path: "/",
-  //   element: <Layout />,
-  //   children: [
-  //     {
-  //       path: "/",
-  //       element: <Home />,
-  //     },
-  //     {
-  //       path: "/write",
-  //       element: <Write />,
-  //     },
-  //   ],
-  // },
+const routerConfig = [
   {
     path: "/",
-    element: "",
-    errorElement: <ErrorPage />,
+    element: lazy(() => import("@/pages/home")),
+    children:[
+        
+    ]
   },
-  // {
-  //   path: "/login",
-  //   element: <Login />,
-  // },
-  // {
-  //   path: "/register",
-  //   element: <Register />,
-  // },
-  // {
-  //   path: "/home",
-  //   element: <div>Home!</div>,
-  // },
-  // {
-  //   path: "/register",
-  //   element: <div>Home!</div>,
-  // },
-]);
+  {
+    path:''
 
-export default router;
+  },
+];
+
+export const routes = buildRoutes(routerConfig);
