@@ -5,13 +5,15 @@ const routerConfig = [
   {
     path: "/",
     element: lazy(() => import("@/pages/home")),
-    children:[
-        
-    ]
+    children: [
+      {
+        path: "/home",
+        element: lazy(() => import("@/pages/home")),
+      },
+    ],
   },
   {
-    path:''
-
+    path: "",
   },
 ];
 
