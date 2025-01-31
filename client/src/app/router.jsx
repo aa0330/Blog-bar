@@ -1,20 +1,16 @@
-import { Children, lazy } from "react";
+import { lazy } from "react";
 import { buildRoutes } from "@/utils";
 
 const routerConfig = [
   {
     path: "/",
     element: lazy(() => import("@/pages/home")),
-    children: [
-      {
-        path: "/home",
-        element: lazy(() => import("@/pages/home")),
-      },
-    ],
   },
   {
-    path: "",
+    path: "article",
+    element: lazy(() => import("@/pages/article")),
   },
+  
 ];
 
 export const routes = buildRoutes(routerConfig);
