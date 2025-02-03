@@ -1,21 +1,12 @@
-import React from "react";
-import { Upload } from "antd";
-import { Link } from "react-router-dom";
+import React, { useState, useEffect } from "react";
 import "./index.scss";
 
 const Index = () => {
-
-
-  
-
-
-
   return (
-    <div class="w-60 mx-auto flex justify-between">
-      <div class="flex pb-20 justify-between items-center w-full px-14">
-        <div>
-          <p class="text-2xl mb-2">Hi 👋, Welcome To My Blog. ✨</p>
-          <p class="text-4xl font-bold mb-2">
+    <div class="home_container">
+        <div class="home_context">
+          <p>Hi 👋, Welcome To My Blog. ✨</p>
+          <p>
             I'm
             {/* <span class="text-cyan-400"> {blogName}</span>. */}
           </p>
@@ -65,7 +56,6 @@ const Index = () => {
             alt="Avatar"
           />
         </div> */}
-      </div>
     </div>
   );
 };

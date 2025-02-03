@@ -1,12 +1,4 @@
-.app {
-  display: flex;
-  justify-content: center;
-  background-color: #fafaf7;
-  .container {
-    width: 1024px;
-    .link {
-      text-decoration: none;
-      color: inherit;
-    }
-  }
+body {
+  padding: 0;
+  margin: 0;
 }
