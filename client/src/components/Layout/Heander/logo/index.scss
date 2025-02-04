@@ -1,0 +1,17 @@
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  .blog-name{
+    color: #e3a0be;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 10px;
+    user-select: none;
+  }
+}

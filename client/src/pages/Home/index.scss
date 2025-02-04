@@ -1,17 +1,23 @@
 .home_container {
   width: 100vw;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  padding-top: 5rem;
   background-color: #f4fcfa;
-  .home_container {
-    width: 100%;
-    padding: 20;
+  .home_context {
+    width: 60rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-self: center;
+
+    .main_context {
+      display: block;
+    }
     p {
       margin: 0;
     }
+  }
+  .home_avater {
+    width: 60rem;
   }
 }

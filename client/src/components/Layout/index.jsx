@@ -1,17 +1,13 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import "./index.scss";
+import Header from "./Heander";
 
 const Layout = () => {
-  
-
-
-
   return (
     <>
-      <NavBar />
+      <Header />
       <Outlet />
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

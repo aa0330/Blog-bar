@@ -1,15 +1,14 @@
-import React from "react";
-import "./index.scss";
+import { Button } from "antd";
 import Logo from "./logo";
+import "./index.scss";
 
 const Header = () => {
   return (
-    <div className="header-container backdrop-blur-sm">
-      <div class="w-75 my-0 mx-auto flex justify-between">
+    <div className="header-container">
+      <div class=" header-context">
         <Logo />
         <div class="flex justify-between">
-          <Menu />
-          <Button />
+          <Button>11</Button>
         </div>
       </div>
     </div>
