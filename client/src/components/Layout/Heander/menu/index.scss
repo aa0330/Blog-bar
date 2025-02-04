@@ -1,0 +1,16 @@
+.header-menus {
+  display: flex;
+  flex-direction: row;
+
+  .header-block {
+    margin: 0 .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      cursor: pointer;
+      font-weight: 600;
+    }
+  }
+}

@@ -1,14 +1,16 @@
 import { Button } from "antd";
 import Logo from "./logo";
+import Menu from "./menu";
 import "./index.scss";
 
 const Header = () => {
   return (
     <div className="header-container">
-      <div class=" header-context">
+      <div className="header-context">
         <Logo />
-        <div class="flex justify-between">
-          <Button>11</Button>
+        <div className="header-left">
+          <Menu></Menu>
+          <Button>1111</Button>
         </div>
       </div>
     </div>

@@ -14,5 +14,10 @@
     align-items: center;
     scroll-margin-top: 0px;
     scroll-margin-bottom: 0px;
+    .header-left {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 }

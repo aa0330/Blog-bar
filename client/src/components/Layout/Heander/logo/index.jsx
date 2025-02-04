@@ -13,7 +13,7 @@ const Logo = () => {
     >
       <svg
         t="1738640242475"
-        class="icon"
+        className="icon"
         viewBox="0 0 1138 1024"
         version="1.1"
         xmlns="http://www.w3.org/2000/svg"
@@ -237,7 +237,7 @@ const Logo = () => {
           p-id="18065"
         ></path>
       </svg>
-      <span class="blog-name text-xl font-semibold text-sky-500">
+      <span className="blog-name text-xl font-semibold text-sky-500">
         {blogName}
       </span>
     </div>
