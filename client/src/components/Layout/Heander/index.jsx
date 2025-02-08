@@ -1,6 +1,6 @@
-import { Button } from "antd";
 import Logo from "./logo";
 import Menu from "./menu";
+import Button from "./Button";
 import "./index.scss";
 
 const Header = () => {
@@ -9,8 +9,8 @@ const Header = () => {
       <div className="header-context">
         <Logo />
         <div className="header-left">
-          <Menu></Menu>
-          <Button>1111</Button>
+          <Menu />
+          <Button />
         </div>
       </div>
     </div>
