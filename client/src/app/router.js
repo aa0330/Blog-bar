@@ -7,16 +7,17 @@ export const routerConfig = [
   {
     path: "/",
     element: lazy(() => import("@/components/Layout")),
-    
+
     children: [
       {
-        path: "/",
+        index: true,
         element: lazy(() => import("@/pages/home")),
         meta: {
           title: "首页",
           show: true,
           icon: HomeOutlined,
         },
+
       },
       {
         path: "/articleList",
@@ -24,7 +25,7 @@ export const routerConfig = [
         meta: {
           title: "文章",
           show: true,
-          icon: FormOutlined ,
+          icon: FormOutlined,
         },
       },
       {
@@ -37,10 +38,6 @@ export const routerConfig = [
         },
       },
     ],
-  },
-  {
-    path: "article",
-    element: lazy(() => import("@/pages/article")),
   },
 ];
 

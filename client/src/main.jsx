@@ -5,7 +5,7 @@ import { routes } from "@/app/router";
 import './style.scss'
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <React.StrictMode>
-    <RouterProvider router={createBrowserRouter(routes)} />
-  </React.StrictMode>
+  // <React.StrictMode>
+  <RouterProvider router={createBrowserRouter(routes)} />
+  // </React.StrictMode>
 );

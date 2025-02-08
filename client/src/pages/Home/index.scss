@@ -2,19 +2,48 @@
   width: 100vw;
   height: 100vh;
   background-color: #f9f9f9;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-  .home_context {
+  .home-box {
     width: 60rem;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 
-    p {
-      margin: 0;
+    .home-context {
+      width: 60rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-self: center;
+
+      p {
+        margin: 0;
+        margin-bottom: 0.5rem;
+      }
+
+      .info-context {
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+
+      .main-context {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        font-weight: 700;
+      }
     }
-  }
-  .home_avater {
-    width: 60rem;
+
+    .home_avater {
+      // width: 60rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+    }
   }
 }
