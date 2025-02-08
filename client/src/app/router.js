@@ -1,11 +1,13 @@
 import { lazy } from "react";
 import { buildRoutes } from "@/utils";
 import path from "path";
+import { HomeOutlined, FormOutlined, SunOutlined } from "@ant-design/icons";
 
 export const routerConfig = [
   {
     path: "/",
     element: lazy(() => import("@/components/Layout")),
+    
     children: [
       {
         path: "/",
@@ -13,7 +15,7 @@ export const routerConfig = [
         meta: {
           title: "首页",
           show: true,
-          icon: "HomeFilled",
+          icon: HomeOutlined,
         },
       },
       {
@@ -22,7 +24,7 @@ export const routerConfig = [
         meta: {
           title: "文章",
           show: true,
-          icon: "Tickets",
+          icon: FormOutlined ,
         },
       },
       {
@@ -31,7 +33,7 @@ export const routerConfig = [
         meta: {
           title: "日常",
           show: true,
-          icon: "Sunny",
+          icon: SunOutlined,
         },
       },
     ],

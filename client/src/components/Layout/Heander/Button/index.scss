@@ -1,4 +1,14 @@
-.header-btns {
-  width: 1.75rem;
-  height: 1.75rem;
+.btns-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1.2rem;
+  
+  .header-btns {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+  }
 }

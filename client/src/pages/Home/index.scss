@@ -1,8 +1,8 @@
 .home_container {
   width: 100vw;
   height: 100vh;
-  padding-top: 5rem;
   background-color: #f9f9f9;
+
   .home_context {
     width: 60rem;
     display: flex;
@@ -10,9 +10,6 @@
     justify-content: center;
     align-self: center;
 
-    .main_context {
-      display: block;
-    }
     p {
       margin: 0;
     }
