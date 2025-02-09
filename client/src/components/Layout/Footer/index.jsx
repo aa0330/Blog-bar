@@ -4,17 +4,17 @@ import "./index.scss";
 const Footer = () => {
 
   return (
-    <div className="footer-container ">
-      <div className="">
-        <a underline={false} className=" ">
+    <div className="footer-container">
+      <div className="line1" >
+        <a className="line1-text">
           &copy 小王的个人博客
         </a>
-        <a className="" href="https://beian.miit.gov.cn">
+        <a onClick={() => window.location = 'https://beian.miit.gov.cn'}>
           豫ICP备2025109313号
         </a>
       </div>
-      {/* <div className="w-96 flex justify-evenly mb-2">
-      <a
+      <div className="w-96 flex justify-evenly mb-2">
+        {/* <a
         href="https://www.aliyun.com/?spm=5176.28055625.J_3207526240.1.6a27154aw7v5VK"
         target="_blank"
       >
@@ -34,8 +34,8 @@ const Footer = () => {
           loading="lazy"
           src="https://img.shields.io/badge/%E4%B8%83%E7%89%9B%E4%BA%91-%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8-07beff"
         />
-      </a>
-    </div> */}
+      </a> */}
+      </div>
     </div>
   )
 };

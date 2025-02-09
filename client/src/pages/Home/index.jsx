@@ -23,7 +23,7 @@ const Index = () => {
   }
 
   return (
-    <div className="home_container">
+    <div className="home_container" >
       <div className="home-box">
         <div className="home-context">
           <p className="info-context">Hi 👋, Welcome To My Blog. ✨</p>

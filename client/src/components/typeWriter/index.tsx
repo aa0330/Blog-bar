@@ -20,7 +20,6 @@ const TypeWriter = (props: Props) => {
     wordPrintTime = 0.3,
     timeSpace = 0.8,
   } = props;
-  console.log(11, { fontSize, color });
 
   const startTyping = () => {
     const writer = document.getElementById("writer") as HTMLElement;
