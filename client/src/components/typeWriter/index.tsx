@@ -7,16 +7,19 @@ interface Props {
   color: string; // 字体颜色
   timeSpace: number; // 每段话之间的间隔时间
   wordPrintTime: number; // 打字速率
-  style: object
+  style: object;
 }
 
 const TypeWriter = (props: Props) => {
-  const loppIndexRef = useRef(0)
+  const loppIndexRef = useRef(0);
 
-  const { fontSize = '1rem',
-    color = '#000',
-    typeList = [], wordPrintTime = 0.3,
-    timeSpace = 0.8 } = props
+  const {
+    fontSize = "1rem",
+    color = "#000",
+    typeList = [],
+    wordPrintTime = 0.3,
+    timeSpace = 0.8,
+  } = props;
   console.log(11, { fontSize, color });
 
   const startTyping = () => {
@@ -25,7 +28,8 @@ const TypeWriter = (props: Props) => {
 
     let currentIndex = loppIndexRef.current; // 当前索引
     let currentText = typeList[currentIndex]; // 当前句子
-    let num = 0, str = "";
+    let num = 0,
+      str = "";
 
     // 清空当前内容并添加淡入效果
     writer.innerHTML = "";
@@ -43,7 +47,7 @@ const TypeWriter = (props: Props) => {
         clearInterval(typeInterval); // 当前句子打印完成
         // 准备打印下一句
         setTimeout(() => {
-          loppIndexRef.current = (currentIndex + 1) % typeList.length;// 下一个索引
+          loppIndexRef.current = (currentIndex + 1) % typeList.length; // 下一个索引
           startTyping(); // 递归调用
         }, timeSpace * 1000);
       }
@@ -55,12 +59,9 @@ const TypeWriter = (props: Props) => {
   }, []);
 
   return (
-    <div style={props.style}>
-      <span
-        id="writer"
-        style={{ fontSize, color }}
-      ></span>
-      <span style={{ fontSize }}>
+    <div className="print-box" style={{ ...props.style, alignItems: "center" }}>
+      <span id="writer" style={{ fontSize, color }}></span>
+      <span className="space" style={{ fontSize }}>
         |
       </span>
     </div>

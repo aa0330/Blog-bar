@@ -1,19 +1,19 @@
+.print-box {
+  display: inline;
+  line-height: 2rem;
 
-
-.space {
-  vertical-align: text-bottom;
-  animation: showInfinite 1s infinite both;
-}
-
-@keyframes showInfinite {
-  0% {
-    opacity: 1;
+  .space {
+    vertical-align: text-bottom;
+    animation: showInfinite 1s infinite both;
   }
 
-  100% {
-    opacity: 0;
+  @keyframes showInfinite {
+    0% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
   }
 }
-
-
-

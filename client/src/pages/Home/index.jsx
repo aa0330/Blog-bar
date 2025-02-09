@@ -4,9 +4,24 @@ import { blogName } from "@/app/baseConfig";
 import AvatarPng from "@/static/avater.jpg";
 import TypeWriter from '@/components/typeWriter'
 import SvgIcon from "@/components/SvgIcon";
+import { baseInfo } from "@/app/baseConfig";
 import "./index.scss";
 
+const linkBgColor = {
+  github: 'black',
+  gitee: 'red',
+  juejin: '#3f7ef7',
+  csdn: '#e96140',
+  bilibili: '#54adde',
+}
+
+
 const Index = () => {
+
+  const toLink = (url) => {
+    window.open(url, '_blank')
+  }
+
   return (
     <div className="home_container">
       <div className="home-box">
@@ -17,11 +32,10 @@ const Index = () => {
             <span style={{ color: '#f693bd', fontWeight: '700' }} className="text-cyan-400"> {blogName}</span>.
           </p>
           <TypeWriter
-            className="mb-2"
             fontSize="1.5rem"
             timeSpace={1}
             wordPrintTime={0.15}
-            style={{ marginBottom: '0.5rem' }}
+            style={{ marginBottom: '0.5rem', display: 'flex' }}
             typeList={[
               "一名前端开发实习生。",
               "A Front End Development Intern 💻.",
@@ -36,28 +50,29 @@ const Index = () => {
             <SvgIcon width="24px" height="24px" name="nodejs" />
             <span style={{ color: '#6fa461' }} >NodeJs</span>.
           </div>
-          <div className="flex gap-4 h-8">
-            {/* {blogInfoForm.value.link.map((item: LinksType) => {
+          <div className="link-boxes flex gap-4 h-8">
+            {baseInfo.map((item) => {
               return (
                 <div
-                  key={item.title}
-                  onClick={() => toLink(item.url)}
-                  title={item.title}
-                  className="w-8 h-8 flex justify-center items-center bg-white rounded-lg border border-solid border-slate-300 hover:cursor-pointer"
+                  key={item.name}
+                  onClick={() => toLink(item.link)}
+                  title={item.name}
+                  className="mian-link-box  w-8 h-8 flex justify-center items-center bg-white rounded-lg border border-solid border-slate-300 hover:cursor-pointer"
+                  style={{ backgroundColor: linkBgColor[item.name] }}
                 >
-                  <Svg-Icon
-                    name={item.title}
+                  <SvgIcon
+                    name={item.name}
                     width="1.4rem"
                     height="1.4rem"
-                  ></Svg-Icon>
+                  ></SvgIcon>
                 </div>
               );
-            })} */}
+            })}
           </div>
         </div>
         <div className="home_avater" >
           <Avatar
-            size={{xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 220 }}
+            size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 220 }}
             src={<img src={AvatarPng} alt="avatar" />}
           />
         </div>

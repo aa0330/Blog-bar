@@ -1,0 +1,9 @@
+.app-container {
+    // width: 100vw;
+    // height: 100vh;
+    position: fixed;    z-index: -10;
+    background-color: #fff;
+    overflow: scroll;
+    scrollbar-color: #878686 #fafafa;
+    scrollbar-width: thin;
+}
