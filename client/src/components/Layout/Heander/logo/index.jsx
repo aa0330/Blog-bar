@@ -237,7 +237,7 @@ const Logo = () => {
           p-id="18065"
         ></path>
       </svg>
-      <span className="blog-name text-xl font-semibold text-sky-500">
+      <span className="blog-name">
         {blogName}
       </span>
     </div>
