@@ -3,6 +3,7 @@ import { Avatar } from 'antd'
 import { blogName } from "@/app/baseConfig";
 import AvatarPng from "@/static/avater.jpg";
 import TypeWriter from '@/components/typeWriter'
+import SvgIcon from "@/components/SvgIcon";
 import "./index.scss";
 
 const Index = () => {
@@ -26,14 +27,14 @@ const Index = () => {
               "A Front End Development Intern 💻.",
             ]}
           />
-          <div className="info-context text-2xl mb-4 flex items-center">
+          <div className="info-context icon-boxs ">
             I'm Interested In&ensp;
-            <Svg-Icon width="24px" height="24px" name="vue" />
-            <span className="text-emerald-400">Vue</span>, &ensp;
-            <Svg-Icon width="24px" height="24px" name="react" />
-            <span className="text-cyan-500">React</span> &ensp;And&ensp;
-            <Svg-Icon width="24px" height="24px" name="nodejs" />
-            <span className="text-lime-600">NodeJs</span>.
+            <SvgIcon width="24px" height="24px" name="react" />
+            <span style={{ color: '#1abcd8' }}>React</span> &ensp;And&ensp;
+            <SvgIcon name="vue" width="24" height="24" />
+            <span style={{ color: '#41b883' }}>Vue</span>, &ensp;
+            <SvgIcon width="24px" height="24px" name="nodejs" />
+            <span style={{ color: '#6fa461' }} >NodeJs</span>.
           </div>
           <div className="flex gap-4 h-8">
             {/* {blogInfoForm.value.link.map((item: LinksType) => {
@@ -64,4 +65,6 @@ const Index = () => {
     </div>
   );
 };
+
+
 export default Index;

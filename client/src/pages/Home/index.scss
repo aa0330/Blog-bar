@@ -36,6 +36,13 @@
         line-height: 2.5rem;
         font-weight: 700;
       }
+
+      .icon-boxs {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-self: center;
+      }
     }
 
     .home_avater {
