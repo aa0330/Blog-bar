@@ -76,10 +76,7 @@ const Index = () => {
           </div>
         </div>
         <div className="home_avater">
-          <Avatar
-            size={{ xs: 24, sm: 32, md: 40, lg: 64, xl: 80, xxl: 220 }}
-            src={<img src={AvatarPng} alt="avatar" />}
-          />
+          <Avatar size={220} src={<img src={AvatarPng} alt="avatar" />} />
         </div>
       </div>
     </div>

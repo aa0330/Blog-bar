@@ -5,7 +5,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  // padding-top: 5rem;
 
   .home-box {
     width: 53rem;
@@ -42,6 +41,7 @@
         flex-direction: row;
         align-items: center;
         justify-self: center;
+        margin-bottom: 1rem;
       }
 
       .link-boxes {
@@ -65,7 +65,6 @@
       display: flex;
       align-items: center;
       justify-content: left;
-
     }
   }
 }
