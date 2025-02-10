@@ -4,7 +4,7 @@ import Icon, { HomeOutlined } from "@ant-design/icons";
 
 const Menu = () => {
   return (
-    <div className="header-menus flex text-menu">
+    <div className="header-menus">
       {routerConfig[0].children.map(
         (ele) =>
           ele.meta.show && (

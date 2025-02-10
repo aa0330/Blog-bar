@@ -13,7 +13,7 @@ const Footer = () => {
           豫ICP备2025109313号
         </a>
       </div>
-      <div className="w-96 flex justify-evenly mb-2">
+      <div className="">
         {/* <a
         href="https://www.aliyun.com/?spm=5176.28055625.J_3207526240.1.6a27154aw7v5VK"
         target="_blank"

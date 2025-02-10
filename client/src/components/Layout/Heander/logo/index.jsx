@@ -7,10 +7,7 @@ const Logo = () => {
   const navigate = useNavigate();
 
   return (
-    <div
-      className="logo-container hover:cursor-pointer"
-      onClick={() => navigate("/")}
-    >
+    <div className="logo-container" onClick={() => navigate("/")}>
       <svg
         t="1738640242475"
         className="icon"
@@ -237,9 +234,7 @@ const Logo = () => {
           p-id="18065"
         ></path>
       </svg>
-      <span className="blog-name">
-        {blogName}
-      </span>
+      <span className="blog-name">{blogName}</span>
     </div>
   );
 };
